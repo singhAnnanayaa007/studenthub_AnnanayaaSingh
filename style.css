@@ -6,8 +6,12 @@ body {
 nav {
     
     padding: 15px;
-    background-color:darkseagreen;
+    background-color:rgb(105, 201, 218);
     color: white;
+}
+
+section {
+    padding: 60px 20px;
 }
 
 .logo{
@@ -19,16 +23,16 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
 
 }
 
 .nav-lists {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 100px;
     list-style: none;
-    margin-top: 10px;
+    margin-top: 50px;
 }
 
 .hero{
@@ -39,9 +43,29 @@ nav {
 .hero button {
     padding: 10px 20px;
     margin-top: 10px;
+    background-color: #408adf;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+button:hover{
+    background-color: #5b64db;
 }
 
 .features{
     padding: 40px;
     text-align: center;
+}
+
+.about{
+    text-align: center;
+    padding: 50px;
+}
+
+footer{
+    text-align: left;
+    padding: 50px;
 }
