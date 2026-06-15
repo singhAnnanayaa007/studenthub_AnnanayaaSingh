@@ -3,3 +3,30 @@ body {
     font-family: Arial, sans-serif;
 }
 
+nav {
+    
+    padding: 15px;
+    background-color:darkseagreen;
+    color: white;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
+.top-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.nav-lists {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    margin-top: 10px;
+}
