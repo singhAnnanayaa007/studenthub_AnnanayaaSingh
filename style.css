@@ -69,3 +69,31 @@ footer{
     text-align: left;
     padding: 50px;
 }
+
+.feature-box{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin: 50px;
+    border: black;
+    align-items: center;
+    align-content: center;
+}
+
+.box1{
+    min-height: 50px;
+    min-width: 100px;
+    background-color: #eba1a1;
+}
+
+.box2{
+    min-height: 50px;
+    min-width: 100px;
+    background-color: #78e9c3;
+}
+
+.box3{
+    min-height: 50px;
+    min-width: 100px;
+    background-color: #9da2eb;
+}
