@@ -30,3 +30,18 @@ nav {
     list-style: none;
     margin-top: 10px;
 }
+
+.hero{
+    text-align: center;
+    padding: 50px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+.features{
+    padding: 40px;
+    text-align: center;
+}
