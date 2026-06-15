@@ -75,25 +75,32 @@ footer{
     justify-content: center;
     gap: 100px;
     margin: 50px;
-    border: black;
-    align-items: center;
-    align-content: center;
+    text-align: center;
 }
 
 .box1{
     min-height: 50px;
-    min-width: 100px;
+    min-width: 50px;
     background-color: #eba1a1;
+    border: 2px solid #333;
+    padding: 20px;
+    border-radius: 8px;
 }
 
 .box2{
     min-height: 50px;
-    min-width: 100px;
+    min-width: 50px;
     background-color: #78e9c3;
+    border: 2px solid #333;
+    padding: 20px;
+    border-radius: 8px;
 }
 
 .box3{
     min-height: 50px;
-    min-width: 100px;
+    min-width: 50px;
     background-color: #9da2eb;
+    border: 2px solid #333;
+    padding: 20px;
+    border-radius: 8px;
 }
