@@ -64,7 +64,21 @@ button:hover{
 
 .about{
     text-align: center;
-    padding: 50px;
+    padding: 25px;
+}
+
+.about-para{
+    text-align: center;
+    padding: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about-overview{
+    text-align: center;
+    padding: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(128, 10, 10);
+    font-size:large;
 }
 
 footer{
