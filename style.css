@@ -14,11 +14,6 @@ section {
     padding: 60px 20px;
 }
 
-.logo{
-    width: 100px;
-    height: 100px;
-}
-
 .top-row{
     display: flex;
     justify-content: center;
@@ -331,4 +326,76 @@ li {
     border-radius: 100px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     text-align: center;
+}
+
+/*dark-mode-code*/
+body.dark {
+    background-color: #083258;
+    color: white;
+}
+
+body.dark nav {
+    background-color: #0a1753;
+}
+
+body.dark .card {
+    background-color: #4e0755;
+    color: white;
+}
+body.dark .weather-card{
+    background: rgb(73, 85, 7);
+    padding: 20px;
+    border-radius: 100px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+body.dark .dashboard{
+    padding: 50px;
+    text-align: center;
+    background-color: #14457e;
+    color: white;
+}
+
+body.dark .hero {
+    background-color: #11035c;
+    color: white;
+}
+body.dark .features{
+    padding: 40px;
+    text-align: center;
+    background-color: #402270;
+}
+
+body.dark .about{
+    text-align: center;
+    padding: 25px;
+    background-color: #07415c;
+}
+body.dark .footer{
+    text-align: left;
+    padding: 50px;
+    background-color:#0b2d53;
+}
+body.dark .box1{
+    background-color: #58062f;
+    color: white;
+}
+body.dark .box2{
+    background-color: #075c42;
+    color: white;
+}
+body.dark .box3{
+    background-color: #660b35;
+    color: white;
+}
+
+.dark-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: black;
+    color: white;
+    margin-left: 10px;
 }
