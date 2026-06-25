@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Hub</title>
     <link rel="stylesheet" href="style.css">
-    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
 </head>
 <body style="background-color:rgb(177, 217, 241);">
     <!--Body starts-->
@@ -52,6 +53,26 @@
     <section class="about">
         <h2>About StudentHub</h2>
             <p>StudentHub helps students organize tasks, manage notes, and stay productive throughout their academic journey.</p>
+    </section>
+
+    <!--Dashbard-->>
+    <section class="dashboard">
+        <h2>Dashboard</h2>
+        <div class="dashboard-container">
+            <div class ="card">
+                <h3>Task Manager</h3>
+                <div class="task">
+                    <input id="taskInput" placeholder="Enter task..." />
+                    <button id="addTaskBtn">Add</button>
+                </div>
+                <ul id="taskList"></ul>
+            </div>
+            <div class="card">
+                <h3>Habit Tracher</h3>
+                <ul id="habitls"></ul>
+            </div>
+            <button id="resetHabitsBtn">Reset Today</button>
+        </div>
     </section>
 </body>
 
