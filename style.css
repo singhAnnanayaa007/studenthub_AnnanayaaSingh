@@ -324,3 +324,11 @@ li {
     cursor: pointer;
     font-size: 10px;
 }
+
+.weather-card {
+    background: rgb(225, 245, 116);
+    padding: 20px;
+    border-radius: 100px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}

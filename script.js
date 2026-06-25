@@ -183,3 +183,65 @@ renderNotes();
 // ===== INIT =====
 renderTasks();
 renderHabits();
+
+//weather
+
+const weatherLocation = document.getElementById("weatherLocation");
+const weatherTemp = document.getElementById("weatherTemp");
+const weatherDesc = document.getElementById("weatherDesc");
+
+
+function getLocationWeather() {
+    if (!navigator.geolocation) {
+        weatherLocation.innerText = "Geolocation not supported";
+        return;
+    }
+
+    navigator.geolocation.getCurrentPosition(success, error);
+}
+
+
+function success(position) {
+    const lat = position.coords.latitude;
+    const lon = position.coords.longitude;
+
+    fetchWeather(lat, lon);
+}
+
+
+function error() {
+    weatherLocation.innerText = "Location blocked. Showing default (Jamshedpur)";
+
+    
+    fetchWeather(22.8046, 86.2029);
+}
+
+
+function fetchWeather(lat, lon) {
+
+    const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true`;
+
+    fetch(url)
+        .then(res => res.json())
+        .then(data => {
+
+            const current = data.current_weather;
+
+            weatherLocation.innerText = `Lat: ${lat.toFixed(2)}, Lon: ${lon.toFixed(2)}`;
+            weatherTemp.innerText = `${current.temperature}°C`;
+
+            let condition = "Clear";
+
+            if (current.weathercode >= 61) condition = "Rainy";
+            else if (current.weathercode >= 2) condition = "Cloudy";
+            else condition = "Clear Sky";
+
+            weatherDesc.innerText = condition;
+        })
+        .catch(() => {
+            weatherLocation.innerText = "Weather load failed";
+        });
+}
+
+// INIT WEATHER
+getLocationWeather();
