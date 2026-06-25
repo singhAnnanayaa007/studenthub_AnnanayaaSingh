@@ -65,10 +65,11 @@ button:hover{
 .about{
     text-align: center;
     padding: 25px;
+    background-color: #aadaf0;
 }
 
 .about-para{
-    text-align: center;
+    text-align: left;
     padding: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -81,9 +82,36 @@ button:hover{
     font-size:large;
 }
 
+.about-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.about-row img {
+    width: 250px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.about-text {
+    max-width: 500px;
+}
+
+
+@media (max-width: 768px) {
+    .about-row {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
 footer{
     text-align: left;
     padding: 50px;
+    background-color:#408adf;
 }
 
 .feature-box{
@@ -254,4 +282,45 @@ li {
 
 .nav-lists a:hover {
     text-decoration: underline;
+}
+
+/* ===== STICKY NOTES ===== */
+
+.notes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.note {
+    background: #fff9a8;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    position: relative;
+    min-height: 100px;
+    cursor: pointer;
+}
+
+.note h4 {
+    margin: 0;
+    font-size: 14px;
+}
+
+.note p {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.note button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border: none;
+    background: red;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 10px;
 }

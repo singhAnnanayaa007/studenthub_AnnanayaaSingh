@@ -11,7 +11,7 @@
 
 <body style="background-color:rgb(177, 217, 241);">
 
-    <!-- NAVBAR (same as your main page) -->
+    <!-- NAVBAR-->
     <header>
         <nav>
             <div class="top-row">
@@ -21,7 +21,7 @@
             <ul class="nav-lists">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="dashboard.html">Dashboard</a></li>
-                <li>About</li>
+                <li><a href="about.html">About</a></li>
             </ul>
         </nav>
     </header>
@@ -53,6 +53,18 @@
                 <button id="resetHabitsBtn">Reset Today</button>
             </div>
 
+            <div class="card">
+                <h3>Sticky Notes</h3>
+                <div class="task-input">
+                    <input id="noteTitle" placeholder="Title..." />
+                </div>
+                <div class="task-input">
+                    <input id="noteBody" placeholder="Write note..." />
+                    <button id="addNoteBtn">Add</button>
+                </div>
+                <div id="notesContainer" class="notes-grid"></div>
+            </div>
+
         </div>
     </section>
 
@@ -61,6 +73,6 @@
 </body>
 
 <footer>
-    <p>2026 StudentHub</p>
+    <p>2026 StudentHub | Built by Annanayaa Singh :)</p>
 </footer>
 </html>
