@@ -144,3 +144,99 @@ footer{
         font-size: 20px;
     }
 }
+
+.dashboard {
+    padding: 50px;
+    text-align: center;
+}
+
+.dashboard-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.task-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.task-input input {
+    flex: 1;
+    padding: 8px;
+}
+
+.task-input button {
+    padding: 8px 15px;
+    background: #408adf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+li {
+    list-style: none;
+}
+
+.task-item, .habit-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.delete-btn {
+    color: red;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.habit-btn {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.done {
+    background: green;
+    color: white;
+}
+
+.not-done {
+    background: #ddd;
+}
+
+
+@media (max-width: 768px) {
+    .dashboard-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.nav-lists a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-lists a:hover {
+    text-decoration: underline;
+}

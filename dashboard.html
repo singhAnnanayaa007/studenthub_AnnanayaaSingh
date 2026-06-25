@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body style="background-color:rgb(177, 217, 241);">
+
+    <!-- NAVBAR (same as your main page) -->
+    <header>
+        <nav>
+            <div class="top-row">
+                <img src="your-logo-link" class="logo"/>
+                <h1 style="color:rgb(128, 10, 10);"><b>Student Hub</b></h1>
+            </div>
+
+            <ul class="nav-lists">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li>About</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- DASHBOARD -->
+    <section class="dashboard-section">
+        <h2>Dashboard</h2>
+
+        <div class="dashboard-container">
+
+            <!-- TASK MANAGER -->
+            <div class="card">
+                <h3>Task Manager</h3>
+
+                <div class="task-input">
+                    <input id="taskInput" placeholder="Enter task..." />
+                    <button id="addTaskBtn">Add</button>
+                </div>
+
+                <ul id="taskList"></ul>
+            </div>
+
+            <!-- HABIT TRACKER -->
+            <div class="card">
+                <h3>Habit Tracker</h3>
+
+                <ul id="habitList"></ul>
+
+                <button id="resetHabitsBtn">Reset Today</button>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+<footer>
+    <p>2026 StudentHub</p>
+</footer>
+</html>
